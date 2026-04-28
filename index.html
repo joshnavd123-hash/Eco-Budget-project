@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoBudget - Smart Budget & Sustainability Tracker</title>
+    <meta name="description" content="Track your spending. Understand your impact. Build a greener future.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <span>🌱</span> EcoBudget
+        </div>
+        <div class="nav-links" id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="login.html" id="nav-login">Login</a>
+            <a href="register.html" id="nav-register" class="btn-primary">Register</a>
+            <a href="dashboard.html" id="nav-dashboard" style="display:none;">Dashboard</a>
+            <a href="#" id="nav-logout" class="btn-primary" style="display:none;">Logout</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>EcoBudget</h1>
+            <p>Track your spending. Understand your impact. Build a greener future.</p>
+            <a href="dashboard.html" class="btn-primary">👉 Go to Dashboard</a>
+        </div>
+    </section>
+
+    <!-- Why Choose EcoBudget Section -->
+    <section id="features">
+        <div class="container">
+            <h2>Why Choose EcoBudget</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <span class="card-icon">📊</span>
+                    <h3>Smart Expense Tracking</h3>
+                    <p>Easily log and categorize your daily expenses to see exactly where your money goes.</p>
+                </div>
+                <div class="card">
+                    <span class="card-icon">🌍</span>
+                    <h3>Sustainability Scoring</h3>
+                    <p>Every expense is rated for its environmental impact. Learn how green your lifestyle truly is.</p>
+                </div>
+                <div class="card">
+                    <span class="card-icon">📈</span>
+                    <h3>Detailed Reports</h3>
+                    <p>Visualize your spending and sustainability trends with dynamic, easy-to-read charts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Mission Section -->
+    <section id="mission" style="background-color: var(--surface-color);">
+        <div class="container" style="text-align: center; max-width: 800px;">
+            <h2>Our Mission</h2>
+            <p style="font-size: 1.2rem; color: var(--text-primary);">
+                EcoBudget helps users make financially and environmentally conscious decisions by linking daily expenses with sustainability impact.
+            </p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About EcoBudget</h2>
+            <div style="display: flex; flex-direction: column; gap: 1.5rem; max-width: 800px; margin: 0 auto; text-align: center;">
+                <p>
+                    <strong>What EcoBudget Does:</strong> We provide a seamless platform to not only track your financial health but also measure the carbon footprint of your purchases. From transport to food, we give you insights that matter.
+                </p>
+                <p>
+                    <strong>Why Sustainability Matters:</strong> Small everyday choices add up. By understanding the environmental cost of our spending, we can shift towards eco-friendly alternatives, reducing our carbon footprint and creating a sustainable world for future generations.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="background-color: var(--surface-color);">
+        <div class="container" style="max-width: 600px;">
+            <h2>Contact Us</h2>
+            <form class="card" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" class="form-control" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>

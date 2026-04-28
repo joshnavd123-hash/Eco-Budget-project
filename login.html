@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - EcoBudget</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <span>🌱</span> EcoBudget
+        </div>
+        <div class="nav-links" id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="login.html" id="nav-login">Login</a>
+            <a href="register.html" id="nav-register" class="btn-primary">Register</a>
+            <a href="dashboard.html" id="nav-dashboard" style="display:none;">Dashboard</a>
+            <a href="#" id="nav-logout" class="btn-primary" style="display:none;">Logout</a>
+        </div>
+    </nav>
+
+    <section class="hero" style="min-height: 100vh; display: flex; align-items: center; justify-content: center; padding-top: 5rem;">
+        <div class="card" style="width: 100%; max-width: 400px;">
+            <h2 style="text-align: center; margin-bottom: 1.5rem; color: var(--brand-primary);">Login</h2>
+            <div id="login-error" style="color: var(--color-red); margin-bottom: 1rem; text-align: center; display: none;"></div>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" class="form-control" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" class="form-control" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; margin-top: 1rem;">Login</button>
+            </form>
+            <p style="text-align: center; margin-top: 1.5rem; color: var(--text-secondary);">
+                Don't have an account? <a href="register.html" style="color: var(--brand-primary); font-weight: 600;">Register here</a>
+            </p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
